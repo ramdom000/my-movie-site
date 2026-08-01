@@ -1,2 +1,95 @@
-<h1>Welcome to My Movie Site</h1>
-<p>This is my first website.</p>
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Movie Site</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+}
+header{
+background:#e50914;
+padding:15px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+.search{
+text-align:center;
+padding:20px;
+}
+.search input{
+width:80%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+.movies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:20px;
+padding:20px;
+}
+.card{
+background:#222;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+.card h3{
+margin:10px 0;
+}
+.card button{
+background:#e50914;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+.card button:hover{
+background:#ff2b2b;
+}
+</style>
+</head>
+
+<body>
+
+<header>🎬 MY MOVIE SITE</header>
+
+<div class="search">
+<input type="text" placeholder="Кино хайх...">
+</div>
+
+<div class="movies">
+
+<div class="card">
+<h3>Movie 1</h3>
+<button>Үзэх</button>
+</div>
+
+<div class="card">
+<h3>Movie 2</h3>
+<button>Үзэх</button>
+</div>
+
+<div class="card">
+<h3>Movie 3</h3>
+<button>Үзэх</button>
+</div>
+
+<div class="card">
+<h3>Movie 4</h3>
+<button>Үзэх</button>
+</div>
+
+</div>
+
+</body>
+</html>
